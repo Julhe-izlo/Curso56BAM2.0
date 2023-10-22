@@ -127,3 +127,20 @@ span {
 .about p {
     margin-top: 1em;
 }
+
+.portfolio {
+    width: 100vw;
+    padding: 10em;
+    background-color: rgb(3, 1, 67);
+    color: #fff;
+}
+
+.card {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media 
