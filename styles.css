@@ -73,7 +73,7 @@ span {
     color: rgb(17, 143, 3);
 }
 
-/* .content img {
+.content img {
     animation-name: paradaAnimada;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -89,7 +89,7 @@ span {
     to{
         width: 399px;
     }
-} */
+
 
 .btn-primary {
     padding: 10px 20px;
