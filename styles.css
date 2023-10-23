@@ -89,11 +89,11 @@ span {
     to{
         width: 399px;
     }
-
-
+}
+    
 .btn-primary {
     padding: 10px 20px;
-    background-color: rgb(17, 143, 3);
+    background-color:  rgb(17, 143, 3);
     border: none;
     border-radius: 20px;
     margin-top: 10px;
