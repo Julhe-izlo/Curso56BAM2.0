@@ -12,7 +12,7 @@ body {
 .contenedor {
     width: 100%;
     height: 100vh;
-    background-color: rgb(3, 1, 67);
+    background-color: #191c32;
     color: #fff;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .div-container span {
-    color: rgb(17, 143, 3);
+    color: aqua;
 }
 
 .div-container h2 {
@@ -51,8 +51,8 @@ body {
 }
 
 .menu a:hover {
-    background-color: rgb(17, 143, 3);
-    color: rgb(3, 1, 67);
+    background-color: aqua;
+    color: #191c32;
     transition: ease-in .5s;
 }
 
@@ -70,45 +70,30 @@ h1 {
 }
 
 span {
-    color: rgb(17, 143, 3);
+    color: aqua;
 }
 
-.content img {
-    animation-name: paradaAnimada;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes paradaAnimada {
-    from{
-        width: 50px;
-    }
-    50% {
-        width: 200px;
-    }
-    to{
-        width: 399px;
-    }
-}
-    
 .btn-primary {
     padding: 10px 20px;
-    background-color:  rgb(17, 143, 3);
+    background-color:  aqua;
+    color: #191c32;
     border: none;
     border-radius: 20px;
     margin-top: 10px;
     cursor: pointer;
     box-shadow: 1px 3px 11px -5px rgba(0, 255, 255,);
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .btn-primary:hover {
     background-color: #fff;
-    color: rgb(3, 1, 67);
+    color: #191c32;
     box-shadow: none;
 }
 
 .content img {
-    border: 7px solid rgb(17, 143, 3);
+    border: 7px solid aqua;
     justify-content: space-evenly;
     margin: 50px;
 }
@@ -131,13 +116,13 @@ span {
 
 .about.info h2 {
     font-size: 2em;
-    color: rgb(3, 1, 67);
+    color: #191c32;
 }
 
 .divider {
     height: 4px;
     width: 60px;
-    background-color: rgb(17, 143, 3);
+    background-color: aqua;
     margin-top: 5px;
     margin-bottom: 2.5em;
 }
@@ -149,7 +134,7 @@ span {
 .portfolio {
     width: 100vw;
     padding: 10em;
-    background-color: rgb(3, 1, 67);
+    background-color:#191c32;
     color: #fff;
 }
 
@@ -161,13 +146,113 @@ span {
     justify-content: center;
 }
 
-/* como pueden ve el reposive desing todavia estoy modificando pero algo ya pueden ver */
+.bi-github {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    color: black;
+}
+
+.btn-primary2 {
+    padding: 10px 20px;
+    background-color:  aqua;
+    color: #191c32;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(0, 255, 255,);
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact-section {
+    padding: 10em;
+    background-color:#191c32;
+    color: #fff;
+}
+
+.container-contact {
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.form-group textarea {
+    height: 150px;
+    padding: 1.5em;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.form-group .input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    padding: 2em;
+    background-color: aqua;
+}
+
+.footer-content h2 {
+    font-size: 3em;
+}
+
+.footer-content h5 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.sotial-networks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}
+
+.sotial-networks i {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.bi-whatsapp {
+    color: rgb(0, 171, 114);
+}
+
+.bi-instagram {
+    color: rgb(255, 42, 4);
+}
+
 
 @media screen and (max-width: 400px) {
     .contenedor {
         width: 250%;
         height: 100vh;
-        background-color: rgb(0, 0, 0);
+        background-color: #191c32;
         color: #fff;
     }
     .nav-container {
@@ -178,7 +263,7 @@ span {
     }
     .menu a:hover {
         background-color: rgb(252, 0, 0);
-        color: rgb(0, 0, 0);
+        color: #191c32;
         transition: ease-in .5s;
     }
     .div-container h2{
