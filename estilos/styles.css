@@ -132,7 +132,6 @@ span {
 }
 
 .portfolio {
-    width: 100vw;
     padding: 10em;
     background-color:#191c32;
     color: #fff;
@@ -212,7 +211,6 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 200px;
     padding: 2em;
     background-color: aqua;
