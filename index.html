@@ -31,7 +31,7 @@
         <div class="div-content">
             <h1>I´m Julio <span>Izquierdo</span></h1>
             <p>Web Developer (Frondend), I am venturing into the world of technology through programming, now I have the opportunity to introduce myself and let you know something about me through My Digital Portfolio, you can also download my CV in PDF, Thank you for the support.</p>
-            <a download="#" href="documentos/Cv Julio 2023.pdf">
+            <a href="documentos/Cv Julio 2023.pdf">
                 <button type="button" class="btn btn-primary">Download CV</button>
             </a>
         </div>
@@ -73,13 +73,22 @@
       <div class="divider"></div>
       <div class="container-contact">
         <div class="contact-form">
+              
+
           <h4>Send me a message...</h4>
-          <form class="form-group">
-            <input type="text" placeholder="Name and Surname" class="input">
-            <input type="email" placeholder="Email" class="input">
-            <textarea name="message" placeholder="Place your message here..."></textarea>
-            <a href="#" target="_blank" class="btn btn-primary">Send Message</a>
+          <form class="form-group" id="form">
+            <input name="name" id="name" type="text" placeholder="Name and Surname" class="input">
+
+            <input name="email" id="email" type="email" placeholder="Email" class="input">
+
+            <textarea name="message" id="message" placeholder="Place your message here..."></textarea>
+
+            <a href="#" id="mail"" target="_blank" class="btn btn-primary">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </a>
           </form>
+          <ul id="listaTareas" onclick="eliminarDatos(event)"></ul>
+
         </div>
       </div>
     </div>
