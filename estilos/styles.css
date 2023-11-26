@@ -7,6 +7,11 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    transition: .3s ease all;
+}
+
+body.dark {
+    background: #191c32;
 }
 
 .contenedor {
@@ -14,6 +19,11 @@ body {
     height: 100vh;
     background-color: #191c32;
     color: #fff;
+}
+
+body.dark .contenedor {
+    background: #fff;
+    color: #191c32;;
 }
 
 .nav-container {
@@ -50,12 +60,63 @@ body {
     padding: 10px 20px;
 }
 
+body.dark .menu a {
+    color: #191c32;
+}
+
 .menu a:hover {
     background-color: aqua;
     color: #191c32;
     transition: ease-in .5s;
 }
 
+.switch {
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    outline: none;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #f1f1f1;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: 0.3s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+
+    }
+
+    &.active {
+        background: aqua;
+        color: #000;
+        &::after {
+            right: 0;
+            left: unset;
+        }
+
+    }
+
+}
+
+
+.switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
 .content {
     margin: 0 auto;
     width: 80vw;
@@ -119,6 +180,10 @@ span {
     color: #191c32;
 }
 
+body.dark .about-info {
+    color: #fff;
+}
+
 .divider {
     height: 4px;
     width: 60px;
@@ -135,6 +200,11 @@ span {
     padding: 10em;
     background-color:#191c32;
     color: #fff;
+}
+
+body.dark .portfolio {
+    background: #fff;
+    color: #191c32;
 }
 
 .card {
@@ -174,6 +244,11 @@ span {
     color: #fff;
 }
 
+body.dark .contact-section {
+    background: #fff;
+    color: #191c32;
+}
+
 .container-contact {
     margin: 0 auto;
     padding: 2em;
@@ -197,6 +272,11 @@ span {
     color: #fff;
 }
 
+body.dark .form-group textarea {
+    border: 1px solid #191c32;
+    color: #191c32;
+}
+
 .form-group .input {
     padding: 10px 20px;
     margin-bottom: 1em;
@@ -204,6 +284,11 @@ span {
     border: none;
     border-bottom: 1px solid #fff;
     color: #fff;
+}
+
+body.dark .form-group .input {
+    border-bottom: 1px solid #191c32;
+    color: #191c32;
 }
 
 .footer {
